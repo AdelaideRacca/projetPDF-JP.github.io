@@ -25,3 +25,23 @@
 h1 {
   break-before: page;
 }
+
+/* -- TYPOGRAPHIE ----------------------------------- */
+
+@font-face {
+    font-family: 'Eau Sans Book Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eau Sans Book Oblique'), url('eau_sans_book_obl.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Eau Eau Sans Book OsF';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eau Eau Sans Book OsF'), url('eau_sans_book_osf.woff') format('woff');
+    }
+p {
+  font-size: 9pt;
+}
