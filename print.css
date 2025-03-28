@@ -29,19 +29,38 @@ h1 {
 /* -- TYPOGRAPHIE ----------------------------------- */
 
 @font-face {
+    font-family: 'Eau Sans Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eau Sans Book'), url('font/eau_sans_book.woff') format('woff');
+    }
+@font-face {
     font-family: 'Eau Sans Book Oblique';
     font-style: normal;
     font-weight: normal;
-    src: local('Eau Sans Book Oblique'), url('eau_sans_book_obl.woff') format('woff');
-    }
-    
-
-    @font-face {
-    font-family: 'Eau Eau Sans Book OsF';
+    src: local('Eau Sans Book Oblique'), url('font/eau_sans_book_obl.woff') format('woff');
+    }    
+@font-face {
+    font-family: 'Eau Sans Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Eau Eau Sans Book OsF'), url('eau_sans_book_osf.woff') format('woff');
+    src: local('Eau Sans Bold'), url('font/eau_sans_bold.woff') format('woff');
     }
+@font-face {
+    font-family: 'Eau Sans Bold Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eau Sans Bold Oblique'), url('font/eau_sans_bold_obl.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Eau Sans Bold Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eau Sans Bold Oblique'), url('font/eau_sans_bold_obl.woff') format('woff');
+    }
+
+
+
 p {
   font-size: 9pt;
 }
