@@ -1,0 +1,10 @@
+@page {
+  size: 148mm 330mm;
+  margin: 1cm;
+}
+@page :left{
+  margin: 33mm 23mm 65mm 45mm; 
+}
+@page :right{
+  margin: 33mm 45mm 65mm 23mm;
+}
