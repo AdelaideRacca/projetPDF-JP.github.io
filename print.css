@@ -50,5 +50,10 @@ h1 {
 
 body {
   font-size: 9pt;
-  font-family: 'Eau Sans Book'
+  font-family: 'Eau Sans Book';
+  line-height: 12pt;
+}
+
+em {
+  font-family: 'Eau Sans Book Oblique';
 }
