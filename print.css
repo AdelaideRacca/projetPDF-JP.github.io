@@ -39,13 +39,13 @@ h1 {
     font-family: 'Eau Sans Book';
     font-style: normal;
     font-weight: normal;
-    src: local('Eau Sans Book'), url('eau_sans_book.woff') format('woff');
+    src: local('Eau Sans Book'), url('font/eau_sans_book.woff') format('woff');
     }
 @font-face {
     font-family: 'Eau Sans Book Oblique';
     font-style: normal;
     font-weight: normal;
-    src: local('Eau Sans Book Oblique'), url('eau_sans_book_obl.woff') format('woff');
+    src: local('Eau Sans Book Oblique'), url('font/eau_sans_book_obl.woff') format('woff');
     }
 
 body {
