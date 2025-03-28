@@ -29,6 +29,14 @@ h1 {
 /* -- TYPOGRAPHIE ----------------------------------- */
 
 @font-face {
+    font-family: 'supersuper-Regular';
+    src: url('font/supersuper-Regular.woff2') format('woff2'),
+        url('font/supersuper-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Eau Sans Book';
     font-style: normal;
     font-weight: normal;
@@ -36,31 +44,25 @@ h1 {
     }
 @font-face {
     font-family: 'Eau Sans Book Oblique';
-    font-style: normal;
+    font-style: oblique;
     font-weight: normal;
     src: local('Eau Sans Book Oblique'), url('font/eau_sans_book_obl.woff') format('woff');
     }    
 @font-face {
     font-family: 'Eau Sans Bold';
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     src: local('Eau Sans Bold'), url('font/eau_sans_bold.woff') format('woff');
     }
 @font-face {
     font-family: 'Eau Sans Bold Oblique';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Eau Sans Bold Oblique'), url('font/eau_sans_bold_obl.woff') format('woff');
-    }
-@font-face {
-    font-family: 'Eau Sans Bold Oblique';
-    font-style: normal;
-    font-weight: normal;
+    font-style: oblique;
+    font-weight: bold;
     src: local('Eau Sans Bold Oblique'), url('font/eau_sans_bold_obl.woff') format('woff');
     }
 
 
 
-p {
+body {
   font-size: 9pt;
 }
