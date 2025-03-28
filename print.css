@@ -8,3 +8,15 @@
 @page :right{
   margin: 33mm 45mm 65mm 23mm;
 }
+
+body { font: 17px/1.5em serif; margin: 0 auto 3em; padding: 2em 20px; max-width: 800px; color: red;}
+nav ul, nav li { margin: 0; padding: 0; list-style-type: none; }
+header { margin-bottom: 3em; }
+nav { margin: 0 0; max-width: 20em; }
+a { color: inherit; }
+a:hover { color: inherit; }
+pre { color: white; background: #030D23; padding: 1em; white-space: pre-wrap; word-break: keep-all; word-break: break-all; }
+pre, code { font: 14px/1.5em monospace; }
+h1, h2, h3, h4 { font-size: 18px; font-weight: 600; margin: 1.5em 0 0; color: red;}
+h1 { font-size: 21px; margin-bottom: 1.5em; }
+
