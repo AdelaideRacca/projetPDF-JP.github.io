@@ -36,25 +36,17 @@ h1 {
     font-style: normal;
 }
 @font-face {
-    font-family: 'Eau';
-    src: local('Eau Sans Book'), local('Eau-SansBook'),
-        url('Eau-SansBook.woff2') format('woff2'),
-        url('Eau-SansBook.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Eau Sans Book';
     font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Eau';
-    src: local('Eau Sans Book Oblique'), local('Eau-SansBookOblique'),
-        url('Eau-SansBookOblique.woff2') format('woff2'),
-        url('Eau-SansBookOblique.woff') format('woff');
     font-weight: normal;
-    font-style: oblique;
-    font-display: swap;
-}
-
+    src: local('Eau Sans Book'), url('eau_sans_book.woff') format('woff');
+    }
+@font-face {
+    font-family: 'Eau Sans Book Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eau Sans Book Oblique'), url('eau_sans_book_obl.woff') format('woff');
+    }
 
 body {
   font-size: 9pt;
