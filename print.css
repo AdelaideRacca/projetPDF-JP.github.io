@@ -6,21 +6,36 @@
   @bottom-left {
     content: counter(page);
   }
+  blockquote {
+      margin-right: -12.7mm;
+      margin-left: -8mm;
+    }
 }
 @page :right{
   @bottom-right {
     content: counter(page);
   }
+  blockquote {
+      margin-right: -8mm;
+      margin-left: -12.7mm;
+    }
 }
 
 /* -- Couverture ---------------------------- */
 
 @page:nth(1) {
+  margin-top: 6mm;
+  margin-bottom: 6mm;
+  margin-left: 0mm;
+  margin-right: 6mm;
+
+  .pagedjs_area{
   background-image: 
      linear-gradient(rgba(0, 0, 0, 0), rgba(235, 157, 0, 1)),
      url("https://md.picasoft.net/uploads/ea803245-b5fa-4089-88d2-3da7b26d51b1.jpg");  
   background-size: cover;
-  background-position: center;
+  background-position: right;
+}
   @bottom-right { content: none; }
   @bottom-left { content: none; }
   text-align: center;
@@ -131,9 +146,8 @@ th {
 }
 
 blockquote {
-    margin: 0px;
-    margin-right: -8mm;
-    margin-left: -8mm;
+    margin-top: 0;
+    margin-bottom: 0;
     background-color: #dd7105;
     padding: 30px;
     color: white;
