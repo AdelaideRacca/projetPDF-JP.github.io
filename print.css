@@ -19,10 +19,15 @@
   background-image: 
      linear-gradient(rgba(0, 0, 0, 0), rgba(235, 157, 0, 1)),
      url("https://md.picasoft.net/uploads/ea803245-b5fa-4089-88d2-3da7b26d51b1.jpg");  
-  background-size: 148mm 210mm;
+  background-size: cover;
+  background-position: center;
   @bottom-right { content: none; }
   @bottom-left { content: none; }
   text-align: center;
+  color: white;
+  h1 {
+    color: white !important;
+  }
 }
 
 
