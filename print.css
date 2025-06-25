@@ -24,10 +24,10 @@
 /* -- Couverture ---------------------------- */
 
 @page :first {
-  margin-top: 6mm;
-  margin-bottom: 6mm;
+  margin-top: 4.7mm;
+  margin-bottom: 4.7mm;
   margin-left: 0mm;
-  margin-right: 6mm;
+  margin-right: 4.7mm;
 
   .pagedjs_area{
   background-image: 
@@ -53,9 +53,9 @@
 }
 
 @page :nth(12) {
-  margin-top: 6mm;
-  margin-bottom: 6mm;
-  margin-left: 6mm;
+  margin-top: 4.7mm;
+  margin-bottom: 4.7mm;
+  margin-left: 4.7mm;
   margin-right: 0mm;
 
   .pagedjs_area{
@@ -256,7 +256,7 @@ img {
   right: -12.7mm;
   }
   img.top {
-    margin-left: -23.4pt;
+    margin-left: -23pt;
   }
 }
 
