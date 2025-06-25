@@ -81,9 +81,12 @@
 
 /* ------PAGES INTERIEURES -------*/
 
-@page :nth(3)
-.pagedjs_sheet {
-    background: radial-gradient(closest-corner ellipse at -150% 50%,rgba(235,157,0,0.5),white)
+@page :nth(3) {
+    background: radial-gradient(closest-corner ellipse at -40% 50%,rgba(235,157,0,1),white)
+}
+
+@page :nth(6) {
+    background: radial-gradient(closest-corner ellipse at 140% 50%, rgba(235,157,0,1),white)
 }
 
 @page :nth(3) {
@@ -94,7 +97,14 @@
 
 @page :nth(6) {
   img {
-    height: 90mm;
+    height: 105mm;
+  }
+}
+
+@page :nth(8) {
+  img {
+    height: 125mm;
+    object-position: right !important;
   }
 }
 
@@ -217,8 +227,8 @@ img.background {
 }
 
 img.logo {
-  width: 150px;
-  height: 150px;
+  width: 35mm;
+  height: 35mm;
   float: left !important;
   left: 0mm !important;
   margin-left: 4.3mm !important;
@@ -236,11 +246,17 @@ img {
   img {
   left: -12.7mm;
   }
+  img.top {
+    margin-left: -12.7mm;
+  }
 }
 
 @page :left {
   img {
   right: -12.7mm;
+  }
+  img.top {
+    margin-left: -23.4pt;
   }
 }
 
@@ -250,9 +266,8 @@ img.down {
 }
 
 img.top {
-  position: static;
+    position: static;
     margin-bottom: -12.7mm;
-    margin-left: -12.7mm;
     margin-top: -12.7mm;
     padding-top: 0px;
     padding-bottom: 12.7mm;
@@ -264,7 +279,7 @@ img.top {
 
 blockquote {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 17.25pt;
     background-color: #eb9d00;
     padding: 30px;
     color: white;
