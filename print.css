@@ -86,6 +86,11 @@
     background: radial-gradient(closest-corner ellipse at -150% 50%,rgba(235,157,0,0.5),white)
 }
 
+@page :nth(3) {
+  img {
+    height: 65mm;
+  }
+}
 
 /* -- CHANGEMENT DE PAGE ---------------------------- */
 h1 {
@@ -198,7 +203,7 @@ p {
   column-count: 2;
 }
 
-/*------ mise en page -------*/
+/*------ images -------*/
 
 
 img.background {
@@ -216,7 +221,6 @@ img.logo {
 
 img {
   width: 143.3mm;
-  height: 40mm;
   object-fit: cover;
   object-position: center;
   position: relative;
@@ -235,8 +239,22 @@ img {
 }
 
 img.down {
-  border: 1px solid red;
+  position: absolute;
+  bottom: -8mm;
 }
+
+img.top {
+  position: static;
+    margin-bottom: -12.7mm;
+    margin-left: -12.7mm;
+    margin-top: -12.7mm;
+    padding-top: 0px;
+    padding-bottom: 12.7mm;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*------ mise en page -------*/
 
 blockquote {
     margin-top: 0;
