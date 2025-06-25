@@ -41,7 +41,10 @@
   text-align: center;
   color: white;
   h1, h2 {
-    margin-top: 150mm;
+    font-size: 45pt;
+    line-height: 48pt;
+    margin-top: 125mm;
+    -webkit-text-stroke: 0pt;
     color: white !important;
   }
   h3, h4 {
@@ -143,24 +146,26 @@ strong {
   font-family: 'Eau Sans Bold';
 }
 
-h1, h2, h3, h4, blockquote, th {
+h1, h2, h3, h4, h5, blockquote, th {
   font-family: 'Supersuper Regular';
   margin-top: 0;
 
 }
 
 h1, h2 {
-  font-size: 20pt;
-  line-height: 23pt;
+  font-size: 25pt;
+  line-height: 28.75pt;
   color: #dd7105;
   -webkit-text-stroke: 0.1pt;
+  margin-bottom: 11.75pt;
 }
 
 h3 {
   font-size: 14pt;
-  line-height: 17pt;
+  line-height: 17.25pt;
   color: #dd7105;
   -webkit-text-stroke: 0.1pt;
+  margin-bottom: 0pt;
 }
 
 h4 {
@@ -168,16 +173,25 @@ h4 {
   line-height: 9.5pt;
   color: #dd7105;
   -webkit-text-stroke: 0.1pt;
-  margin-top: -8pt;
+  margin-bottom: 0pt;
 }
 
 h5 {
-  font-size: 20pt;
-  line-height: 23pt;
+  font-size: 14pt;
+  line-height: 17.25pt;
   color: #dd7105;
   -webkit-text-stroke: 0.1pt;
-  margin-top: -8pt;
+  bottom: 0pt;
   column-count: 2;
+}
+
+h5 > p {
+  font-size: 8.5pt;
+  font-family: 'Eau Sans Book';
+  line-height: 11.5pt;  
+  color: black;
+  -webkit-text-stroke: 0pt;
+  column-count: 1;
 }
 
 p {
@@ -196,14 +210,6 @@ img.logo {
   margin-left: 6mm;
 }
 
-th {
-  background-color: #dd7105;
-  color: white;
-  font-family: 'Supersuper Regular';
-  font-size: 9pt;
-  line-height: 11.5pt;
-  -webkit-text-stroke: 0.1pt;
-}
 
 blockquote {
     margin-top: 0;
@@ -217,13 +223,26 @@ blockquote {
     -webkit-text-stroke: 0.5pt;
 }
 
+th {
+  background-color: #eb9d00;
+  color: black;
+  font-family: 'Supersuper Regular';
+  font-size: 9pt;
+  line-height: 11.5pt;
+  -webkit-text-stroke: 0.1pt;
+}
+
 table, td, th {
 border-collapse: collapse;
-  border-top: 1px #dd7105 solid;
-  border-bottom: 1px #dd7105 solid;
+  border-top: 1px #eb9d00 solid;
+  border-bottom: 1px #eb9d00 solid;
   text-align: left;
   vertical-align: top;
   padding-left: 5px;
+}
+
+td {
+  padding-top: 3px;
 }
 
 table {
