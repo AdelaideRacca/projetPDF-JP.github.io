@@ -43,7 +43,7 @@
   h1, h2 {
     font-size: 45pt;
     line-height: 48pt;
-    margin-top: 125mm;
+    margin-top: 120mm;
     -webkit-text-stroke: 0pt;
     color: white !important;
   }
@@ -200,16 +200,43 @@ p {
 
 /*------ mise en page -------*/
 
+
 img.background {
-  display: none;
+  display: none !important;
 }
 
 img.logo {
   width: 150px;
-  float: left;
-  margin-left: 6mm;
+  height: 150px;
+  float: left !important;
+  left: 0mm !important;
+  margin-left: 4.3mm !important;
+  object-fit: cover;
 }
 
+img {
+  width: 143.3mm;
+  height: 40mm;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+}
+
+@page :right {
+  img {
+  left: -12.7mm;
+  }
+}
+
+@page :left {
+  img {
+  right: 0mm;
+  }
+}
+
+img.down {
+  border: 1px solid red;
+}
 
 blockquote {
     margin-top: 0;
@@ -247,6 +274,12 @@ td {
 
 table {
   margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 11.5pt;
+  list-style-type: none;
+  column-count: 2;
 }
 
 
