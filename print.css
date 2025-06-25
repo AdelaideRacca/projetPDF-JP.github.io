@@ -32,7 +32,7 @@
   .pagedjs_area{
   background-image: 
      linear-gradient(to right, rgba(235, 157, 0, 1), rgba(0, 0, 0, 0)),
-     url("https://md.picasoft.net/uploads/ea803245-b5fa-4089-88d2-3da7b26d51b1.jpg");  
+     url("https://md.picasoft.net/uploads/634ff4b9-8c8e-4a1f-830d-2e13f246c2b7.JPG");  
   background-size: cover;
   background-position: center;
 }
@@ -50,12 +50,24 @@
 }
 
 @page :nth(12) {
+  margin-top: 6mm;
+  margin-bottom: 6mm;
+  margin-left: 6mm;
+  margin-right: 0mm;
+
+  .pagedjs_area{
+  background-image: 
+     linear-gradient(to left, rgba(235, 157, 0, 1), rgba(0, 0, 0, 0)),
+     url("https://md.picasoft.net/uploads/8f57fe5f-ecca-4a4d-b3d3-4dbaa65d6be8.JPG");  
+  background-size: cover;
+  background-position: center;
+  }
   @bottom-right { content: none; }
   @bottom-left { content: none; }
   text-align: center;
   color: white;
   h1, h2 {
-    margin-top: 175mm;
+    margin-top: 185mm;
     color: white !important;
   }
   h3, h4 {
@@ -131,7 +143,7 @@ strong {
   font-family: 'Eau Sans Bold';
 }
 
-h1, h2, h3, blockquote, th {
+h1, h2, h3, h4, blockquote, th {
   font-family: 'Supersuper Regular';
   margin-top: 0;
 
@@ -157,6 +169,15 @@ h4 {
   color: #dd7105;
   -webkit-text-stroke: 0.1pt;
   margin-top: -8pt;
+}
+
+h5 {
+  font-size: 20pt;
+  line-height: 23pt;
+  color: #dd7105;
+  -webkit-text-stroke: 0.1pt;
+  margin-top: -8pt;
+  column-count: 2;
 }
 
 p {
@@ -187,13 +208,13 @@ th {
 blockquote {
     margin-top: 0;
     margin-bottom: 0;
-    background-color: #dd7105;
+    background-color: #eb9d00;
     padding: 30px;
     color: white;
     font-family: 'Supersuper Regular';
-    font-size: 9pt;
-    line-height: 11.5pt;
-    -webkit-text-stroke: 0.1pt;
+    font-size: 14pt;
+    line-height: 17.25pt;
+    -webkit-text-stroke: 0.5pt;
 }
 
 table, td, th {
