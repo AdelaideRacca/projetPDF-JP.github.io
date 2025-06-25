@@ -92,6 +92,12 @@
   }
 }
 
+@page :nth(6) {
+  img {
+    height: 90mm;
+  }
+}
+
 /* -- CHANGEMENT DE PAGE ---------------------------- */
 h1 {
   break-before: page;
@@ -234,7 +240,7 @@ img {
 
 @page :left {
   img {
-  right: 0mm;
+  right: -12.7mm;
   }
 }
 
