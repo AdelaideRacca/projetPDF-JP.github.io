@@ -35,7 +35,7 @@
      url("https://md.picasoft.net/uploads/634ff4b9-8c8e-4a1f-830d-2e13f246c2b7.JPG");  
   background-size: cover;
   background-position: center;
-}
+  }
   @bottom-right { content: none; }
   @bottom-left { content: none; }
   text-align: center;
