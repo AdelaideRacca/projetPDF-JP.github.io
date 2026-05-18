@@ -24,23 +24,22 @@
 /* -- Couverture ---------------------------- */
 
 @page :first {
-  margin-top: 4.7mm;
-  margin-bottom: 4.7mm;
-  margin-left: 0mm;
-  margin-right: 4.7mm;
+  margin: 4.7mm;
+  @bottom-right { content: none; }
+  @bottom-left { content: none; }
 
   .pagedjs_area{
   background-image: 
-     linear-gradient(to top, rgba(235, 157, 0, 1), rgba(0, 0, 0, 0)),
-     url("https://md.picasoft.net/uploads/634ff4b9-8c8e-4a1f-830d-2e13f246c2b7.JPG");  
+     linear-gradient(to top, rgba(235, 157, 0, 1), rgba(0, 0, 0, 0) 50%),
+     url("https://md.picasoft.net/uploads/d37ef67a-e351-417a-8fd6-1cc542c746ea.jpeg");  
   background-size: cover;
-  background-position: center;
+  background-position: -555px 0;
   }
-  @bottom-right { content: none; }
-  @bottom-left { content: none; }
+  
   text-align: center;
   color: white;
-  h1, h2 {
+  
+  h1, h2, {
     font-size: 45pt;
     line-height: 48pt;
     margin-top: 128mm;
@@ -50,18 +49,20 @@
   h3, h4 {
     color: white !important;
   }
+  img.titre {
+    margin-top: 92mm;
+    left: 0;
+    bottom: -30pt;
+  }
 }
 
 @page :nth(12) {
-  margin-top: 4.7mm;
-  margin-bottom: 4.7mm;
-  margin-left: 4.7mm;
-  margin-right: 0mm;
+  margin: 4.7mm;
 
   .pagedjs_area{
   background-image: 
      linear-gradient(to top, rgba(235, 157, 0, 1), rgba(0, 0, 0, 0)),
-     url("https://md.picasoft.net/uploads/8f57fe5f-ecca-4a4d-b3d3-4dbaa65d6be8.JPG");  
+     url("https://md.picasoft.net/uploads/27d43f3c-5613-4320-9c4c-5566ec127fd0.jpg");  
   background-size: cover;
   background-position: center;
   }
@@ -78,36 +79,6 @@
   }
 }
 
-
-/* ------PAGES INTERIEURES -------*/
-
-@page :nth(3) {
-    background: radial-gradient(closest-corner ellipse at -40% 50%,rgba(235,157,0,1),white)
-}
-
-@page :nth(6) {
-    background: radial-gradient(closest-corner ellipse at 140% 50%, rgba(235,157,0,1),white)
-}
-
-@page :nth(3) {
-  img {
-    height: 65mm;
-  }
-}
-
-@page :nth(6) {
-  img {
-    height: 105mm;
-  }
-}
-
-@page :nth(8) {
-  img {
-    height: 125mm;
-    object-position: right !important;
-  }
-}
-
 /* -- CHANGEMENT DE PAGE ---------------------------- */
 h1 {
   break-before: page;
@@ -116,6 +87,53 @@ h1 {
 img {
     break-inside: avoid;
 }
+
+/* ------PAGES INTERIEURES -------*/
+
+/* gradients 
+page gauche */
+@page :nth(2) {
+    background: radial-gradient(closest-corner ellipse at 140% 50%, rgba(235,157,0,1),white);
+}
+
+/* gradients 
+page droite */
+@page :nth(7) {
+    background: radial-gradient(closest-corner ellipse at -40% 50%,rgba(235,157,0,1),white);
+}
+
+
+ @page :nth(2) {
+ img {
+    object-position: 44% 100%;
+  }
+}
+
+ @page :nth(5) {
+ img {
+    object-position: 43% 100%;
+  }
+}
+@page :nth(6) {
+  img {
+    height: 105mm;
+  }
+}
+
+@page :nth(7) {
+  img {
+    height: 95mm;
+  }
+}
+
+@page :nth(9) {
+  img {
+    height: 65mm;
+    object-position: 100% 62%;
+  }
+}
+
+
 
 /* -- TYPOGRAPHIE ----------------------------------- */
 
@@ -219,6 +237,21 @@ p {
   column-count: 2;
 }
 
+#synopsisextraits ~ p {
+      column-count: 1 !important;
+    }
+
+strong em {
+  font-family: 'Supersuper Regular';
+  margin-top: 0;
+  font-size: 14pt;
+  line-height: 17.25pt;
+  color: #dd7105;
+  -webkit-text-stroke: 0.1pt;
+  margin-bottom: 0pt;
+  font-style: normal;
+  }
+
 /*------ images -------*/
 
 
@@ -246,7 +279,7 @@ img {
   img {
   left: -12.7mm;
   }
-  img.top {
+  img.top, img.full {
     margin-left: -12.7mm;
   }
 }
@@ -255,7 +288,7 @@ img {
   img {
   right: -12.7mm;
   }
-  img.top {
+  img.top, img.full {
     margin-left: -23pt;
   }
 }
@@ -265,15 +298,25 @@ img.down {
   bottom: -8mm;
 }
 
-img.top {
+img.top, img.full {
     position: static;
     margin-bottom: -12.7mm;
-    margin-top: -12.7mm;
     padding-top: 0px;
-    padding-bottom: 12.7mm;
     padding-left: 0px;
     padding-right: 0px;
 }
+
+img.top {
+    padding-bottom: 12.7mm;
+    margin-top: -12.7mm;
+
+  }
+
+img.full {
+    height: 20.1cm;
+    margin-top: -11.7mm;
+  }
+
 
 /*------ mise en page -------*/
 
@@ -281,11 +324,11 @@ blockquote {
     margin-top: 0;
     margin-bottom: 17.25pt;
     background-color: #eb9d00;
-    padding: 30px;
+    padding: 20px 30px;
     color: white;
     font-family: 'Supersuper Regular';
-    font-size: 14pt;
-    line-height: 17.25pt;
+    font-size: 11pt;
+    line-height: 13.25pt;
     -webkit-text-stroke: 0.5pt;
 }
 
