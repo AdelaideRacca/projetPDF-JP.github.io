@@ -27,6 +27,8 @@
   margin: 4.7mm;
   @bottom-right { content: none; }
   @bottom-left { content: none; }
+  img { left: 0mm; }
+
 
   .pagedjs_area{
   background-image: 
