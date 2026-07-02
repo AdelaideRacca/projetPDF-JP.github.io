@@ -28,6 +28,9 @@
   @bottom-right { content: none; }
   @bottom-left { content: none; }
   img { left: 0mm; }
+  h1 {
+  display: none !important;
+  }
 
 
   .pagedjs_area{
@@ -52,7 +55,7 @@
     color: white !important;
   }
   img.titre {
-    margin-top: 92mm;
+    margin-top: 280px;
     left: 0;
     bottom: -30pt;
   }
@@ -174,9 +177,9 @@ page droite */
 
 
 body {
-  font-size: 8.5pt;
+  font-size: 11px;
   font-family: 'Eau Sans Book';
-  line-height: 11.5pt;
+  line-height: 15px;
 }
 
 em {
@@ -261,9 +264,11 @@ img.background {
   display: none !important;
 }
 
+
+
 img.logo {
-  width: 35mm;
-  height: 35mm;
+  width: 132px;
+  height:   132px;
   float: left !important;
   left: 0mm !important;
   margin-left: 4.3mm !important;
