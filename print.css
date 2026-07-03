@@ -36,7 +36,7 @@
   .pagedjs_area{
   background-image: 
      linear-gradient(to top, rgba(235, 157, 0, 1), rgba(0, 0, 0, 0) 50%),
-     url("https://md.picasoft.net/uploads/d37ef67a-e351-417a-8fd6-1cc542c746ea.jpeg");  
+     url("https://md.picasoft.net/uploads/0ddcd4c7-aa0c-4150-9136-32c57d585c77.jpg");  
   background-size: cover;
   background-position: -555px 0;
   }
@@ -367,7 +367,6 @@ table {
 
 ul {
   padding-left: 11.5pt;
-  list-style-type: none;
   column-count: 2;
 }
 
