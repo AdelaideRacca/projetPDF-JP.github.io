@@ -1,13 +1,13 @@
 @page {
-  size: 148mm 210mm;
-  margin: 12.7mm;
+  size: 559px 793px;
+  margin: 48px;
 }
 @page :left{
   @bottom-left {
     content: counter(page);
   }
   blockquote {
-      margin-right: -12.7mm;
+      margin-right: -48px;
       margin-left: -8mm;
     }
 }
@@ -17,47 +17,46 @@
   }
   blockquote {
       margin-right: -8mm;
-      margin-left: -12.7mm;
+      margin-left: -48px;
     }
 }
 
 /* -- Couverture ---------------------------- */
 
 @page :first {
-  margin: 4.7mm;
+  margin: 17px;
   @bottom-right { content: none; }
   @bottom-left { content: none; }
-  img { left: 0mm; }
+  img { left: 0; }
   h1 {
-  display: none !important;
+    display: none !important;
   }
-
 
   .pagedjs_area{
   background-image: 
      linear-gradient(to top, rgba(235, 157, 0, 1), rgba(0, 0, 0, 0) 50%),
-     url("https://md.picasoft.net/uploads/0ddcd4c7-aa0c-4150-9136-32c57d585c77.jpg");  
+     url("https://md.picasoft.net/uploads/612bed6a-d335-4ae6-b33f-9ea032d3e3a9.jpg");  
   background-size: cover;
-  background-position: -555px 0;
+  background-position: 0 0;
   }
   
   text-align: center;
   color: white;
   
   h1, h2, {
-    font-size: 45pt;
-    line-height: 48pt;
-    margin-top: 128mm;
-    -webkit-text-stroke: 0pt;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 80px;
+    -webkit-text-stroke: 0px;
     color: white !important;
   }
   h3, h4 {
     color: white !important;
   }
   img.titre {
-    margin-top: 280px;
+    margin-top: 290px;
     left: 0;
-    bottom: -30pt;
+    bottom: -35px;
   }
 }
 
@@ -270,13 +269,13 @@ img.logo {
   width: 132px;
   height:   132px;
   float: left !important;
-  left: 0mm !important;
-  margin-left: 4.3mm !important;
+  left: 0 !important;
+  margin-left: 16px !important;
   object-fit: cover;
 }
 
 img {
-  width: 143.3mm;
+  width: 541px;
   object-fit: cover;
   object-position: center;
   position: relative;
@@ -367,7 +366,19 @@ table {
 
 ul {
   padding-left: 11.5pt;
+  column-gap: 21pt;
   column-count: 2;
+  font-size: larger;
+}
+
+li > p {
+  column-count: 1;
+}
+
+li > em {
+  position: relative;
+  left: -11.5pt;
+  font-size: smaller;
 }
 
 
