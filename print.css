@@ -8,7 +8,7 @@
   }
   blockquote {
       margin-right: -48px;
-      margin-left: -8mm;
+      margin-left: -22px;
     }
 }
 @page :right{
@@ -16,7 +16,7 @@
     content: counter(page);
   }
   blockquote {
-      margin-right: -8mm;
+      margin-right: -22px;
       margin-left: -48px;
     }
 }
@@ -61,7 +61,7 @@
 }
 
 @page :nth(12) {
-  margin: 4.7mm;
+  margin: 13px;
 
   .pagedjs_area{
   background-image: 
@@ -75,7 +75,7 @@
   text-align: center;
   color: white;
   h1, h2 {
-    margin-top: 185mm;
+    margin-top: 710px;
     color: white !important;
   }
   h3, h4 {
@@ -107,35 +107,7 @@ page droite */
 }
 
 
- @page :nth(2) {
- img {
-    object-position: 44% 100%;
-  }
-}
 
- @page :nth(5) {
- img {
-    object-position: 43% 100%;
-  }
-}
-@page :nth(6) {
-  img {
-    height: 105mm;
-  }
-}
-
-@page :nth(7) {
-  img {
-    height: 95mm;
-  }
-}
-
-@page :nth(9) {
-  img {
-    height: 65mm;
-    object-position: 100% 62%;
-  }
-}
 
 
 
@@ -279,48 +251,54 @@ img {
   object-fit: cover;
   object-position: center;
   position: relative;
+  z-index: 0;
 }
 
 @page :right {
   img {
-  left: -12.7mm;
+  left: -48px;
   }
-  img.top, img.full {
-    margin-left: -12.7mm;
+  img.top, img.full img.middle{
+    margin-left: -48px;
   }
 }
 
 @page :left {
   img {
-  right: -12.7mm;
+  right: -48px;
   }
-  img.top, img.full {
+  img.top, img.full, img.middle {
     margin-left: -23pt;
   }
 }
 
 img.down {
   position: absolute;
-  bottom: -8mm;
+  bottom: -28px;
 }
 
-img.top, img.full {
+img.top, img.full, img.middle {
     position: static;
-    margin-bottom: -12.7mm;
+    margin-bottom: -48px;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
 }
 
 img.top {
-    padding-bottom: 12.7mm;
-    margin-top: -12.7mm;
+    padding-bottom: 48px;
+    margin-top: -42px;
 
   }
+img.middle {
+  padding-bottom: 48px;
+  margin-top: 0;
+
+}
 
 img.full {
-    height: 20.1cm;
-    margin-top: -11.7mm;
+    height: 759px;
+    margin-top: -42px;
   }
 
 
