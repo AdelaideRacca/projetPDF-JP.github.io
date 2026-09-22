@@ -1,0 +1,28 @@
+@page :nth(2) {
+ img {
+    object-position: 44% 100%;
+  }
+}
+
+ @page :nth(5) {
+ img {
+    object-position: 43% 100%;
+  }
+}
+@page :nth(6) {
+  img {
+    height: 297px;
+  }
+}
+
+@page :nth(7) {
+  img {
+    height: 269px;
+  }
+}
+
+@page :nth(9) {
+  img {
+    height: 244px;
+  }
+}
