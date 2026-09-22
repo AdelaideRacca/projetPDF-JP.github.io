@@ -1,47 +1,51 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Projet.PDF Le grand méchant frisson Médiation</title>
+@page :first {
 
+.pagedjs_area{
+  background-image: 
+     linear-gradient(to top, rgba(235, 157, 0, 1), rgba(0, 0, 0, 0) 50%),
+     url("https://md.picasoft.net/uploads/d9876c43-de7f-4a14-b1d2-973cb2ea9ee4.jpg");  
+  background-size: cover;
+  background-position: -555px 0;
+  }
+}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script type="text/javascript" charset="utf-8">
-        function run() {
-            var text = document.getElementById('pad-content').innerHTML,
-                target = document.getElementById('document'),
-                converter = new showdown.Converter(),
-                html = converter.makeHtml(text);
-            target.innerHTML = html;
-        }
-        $(document).ready(function(){ 
-            $("#pad-content").load($("#pad-content").attr("data-md"), function(){
-		run();
-		window.setTimeout(function(){
-			$.getScript("js/paged.polyfill.js", function(data, textStatus, jqxhr) {})
-			});
-		}); 
-        });
-    </script>
+@page :nth(2) {
+ img {
+    height: 297px;
+    object-position: 0% 100%;
+  }
+}
 
-    <!-- This is the default stylesheet of paged.js -->
-    <style type="text/css" media="screen">:root{--color-background:whitesmoke;--color-pageBox:#666;--color-paper:white;--color-marginBox:transparent}@media screen{body{background-color:var(--color-background)}.pagedjs_pages{display:flex;width:calc(var(--pagedjs-width) * 2);flex:0;flex-wrap:wrap;margin:0 auto}.pagedjs_page{background-color:var(--color-paper);box-shadow:0 0 0 1px var(--color-pageBox);margin:0;flex-shrink:0;flex-grow:0;margin-top:10mm}.pagedjs_first_page{margin-left:var(--pagedjs-width)}.pagedjs_page:last-of-type{margin-bottom:10mm}.pagedjs_margin-bottom,.pagedjs_margin-bottom-center,.pagedjs_margin-bottom-left,.pagedjs_margin-bottom-left-corner-holder,.pagedjs_margin-bottom-right,.pagedjs_margin-bottom-right-corner-holder,.pagedjs_margin-left,.pagedjs_margin-left-bottom,.pagedjs_margin-left-middle,.pagedjs_margin-left-top,.pagedjs_margin-right,.pagedjs_margin-right-bottom,.pagedjs_margin-right-middle,.pagedjs_margin-right-top,.pagedjs_margin-top,.pagedjs_margin-top-center,.pagedjs_margin-top-left,.pagedjs_margin-top-left-corner-holder,.pagedjs_margin-top-right,.pagedjs_margin-top-right-corner-holder{box-shadow:0 0 0 1px inset var(--color-marginBox)}}</style>
+@page :nth(3) {
+ img {
+    object-position: 44% 100%;
+    height: 253px;
+  }
+}
 
-    <!-- LA FEUILLE DE STYLE EN DUR -->
-    <link href="print.css" rel="stylesheet" text="text/css">
-    <link href="print_mediation.css" rel="stylesheet" text="text/css">
+@page :nth(6) {
+ img {
+        height: 384px;
+    }
+  }
 
-     <!-- As the markdown pad is loaded then converted to html, the following line hide the markdown version -->
-     <style type="text/css" media="all">#pad-content{display: none;}</style>
-	
-</head>
-<body>
+@page :nth(7) {
+ img {
+        height: 457px;
 
-    <!-- CHANGE THE URL OF YOUR MARKDOWN CONTENT PAD BELOW -->
-    <div data-md="https://md.picasoft.net/jp_mediation/download" id="pad-content"></div>
-    
-    <div id="document"></div>
+    }
+  }
 
-</body>
-</html>
+@page :nth(8) {
+ img {
+        width: 250px;
+        height: 164px;
+    }
+  }
+
+  ul {
+  padding-left: 11.5pt;
+  column-gap: 21pt;
+  column-count: 2;
+  font-size: inherit;
+}
