@@ -8,3 +8,44 @@
   background-position: -555px 0;
   }
 }
+
+@page :nth(2) {
+ img {
+    height: 297px;
+    object-position: 0% 100%;
+  }
+}
+
+@page :nth(3) {
+ img {
+    object-position: 44% 100%;
+    height: 253px;
+  }
+}
+
+@page :nth(6) {
+ img {
+        height: 384px;
+    }
+  }
+
+@page :nth(7) {
+ img {
+        height: 457px;
+
+    }
+  }
+
+@page :nth(8) {
+ img {
+        width: 250px;
+        height: 164px;
+    }
+  }
+
+  ul {
+  padding-left: 11.5pt;
+  column-gap: 21pt;
+  column-count: 2;
+  font-size: inherit;
+}
