@@ -256,7 +256,7 @@ img {
 
 @page :right {
   img {
-  left: -48px;
+  margin-left: -48px;
   }
   img.top, img.full img.middle{
     margin-left: -48px;
